@@ -1,0 +1,2 @@
+F[n_] := Ceiling[(n + 1) / 2]
+Print[Mod[Sum[9 * Sum[Binomial[n, k] * 9^(n - k), {k, F[n], n}], {n, 1, 2022}], 1000000007]]
